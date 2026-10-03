@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        /* Home */
+        .home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .home-text {
+            max-width: 600px;
+        }
+
+        .home h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .home h1 span {
+            color: #38bdf8;
+        }
+
+        .home h2 {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            color: #94a3b8;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        .profile {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 5px solid #38bdf8;
+            object-fit: cover;
+        }
+
+        /* About */
+        .title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 20px 35px;
+            border-radius: 10px;
+            font-size: 18px;
+            border: 1px solid #334155;
+        }
+
+        .skill:hover {
+            border-color: #38bdf8;
+            transform: translateY(-5px);
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 25px;
+            width: 300px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .project h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #cbd5e1;
+        }
+
+        /* Education */
+        .education {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .education-box {
+            background: #1e293b;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #38bdf8;
+            border-radius: 8px;
+        }
+
+        .education-box h3 {
+            color: #38bdf8;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+                font-size: 14px;
+            }
+
+            .home {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding-top: 50px;
+            }
+
+            .home h1 {
+                font-size: 38px;
+            }
+
+            .profile {
+                width: 220px;
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">MyPortfolio</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section class="home" id="home">
+
+        <div class="home-text">
+            <h1>Hi, I'm <span>Your Name</span></h1>
+
+            <h2>BCA Data Science Student</h2>
+
+            <p>
+                I am a passionate student interested in Data Science,
+                Python, Web Development and Artificial Intelligence.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <!-- Replace profile.jpg with your photo -->
+        <img src="profile.jpg" alt="Profile Photo" class="profile">
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2 class="title">About Me</h2>
+
+        <p>
+            I am a motivated BCA Data Science student with an interest
+            in programming, data analysis, artificial intelligence and
+            web development. I enjoy learning new technologies and
+            building useful projects.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">C Language</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Data Science</div>
+            <div class="skill">Machine Learning</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>
+                    A personal responsive portfolio website
+                    created using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Student Management System</h3>
+                <p>
+                    A simple project for managing student
+                    information and academic records.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Data Analysis Project</h3>
+                <p>
+                    A beginner data analysis project using
+                    Python and basic data visualization.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2 class="title">Education</h2>
+
+        <div class="education">
+
+            <div class="education-box">
+                <h3>BCA - Data Science</h3>
+                <p>Your College Name</p>
+                <p>2024 - 2027</p>
+            </div>
+
+            <div class="education-box">
+                <h3>Intermediate</h3>
+                <p>Your College Name</p>
+                <p>2022 - 2024</p>
+            </div>
+
+            <div class="education-box">
+                <h3>SSC</h3>
+                <p>Your School Name</p>
+                <p>2022</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2 class="title">Contact Me</h2>
+
+        <p>📧 Email: yourmail@gmail.com</p>
+        <p>📱 Phone: +91 XXXXXXXXXX</p>
+        <p>📍 Location: Andhra Pradesh, India</p>
+
+        <br>
+
+        <a href="mailto:yourmail@gmail.com" class="btn">
+            Send Email
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Your Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
